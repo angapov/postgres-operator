@@ -212,6 +212,7 @@ postgresql:
     - local   all             all                                   trust
     - host    all             all                127.0.0.1/32       md5
     - host    all             all                ::1/128            md5
+    - host    replication     {{PGUSER_STANDBY}} all                md5
     - hostssl replication     {{PGUSER_STANDBY}} all                md5
     - host    all             all                all                md5 
     - hostssl all             all                all                md5
